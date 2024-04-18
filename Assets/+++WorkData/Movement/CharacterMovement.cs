@@ -14,7 +14,7 @@ namespace ___WorkData.Movement
         public Vector2 moveInput;
         public float speed  = 5f;
         private Rigidbody2D _rb;
-        private Animator _anim;
+        public Animator _anim;
         private SpriteRenderer _sr;
         #endregion
        
@@ -26,15 +26,13 @@ namespace ___WorkData.Movement
          
             
             _rb = GetComponent<Rigidbody2D>();
-            _anim = GetComponent<Animator>();
             _sr = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
         { 
-            UpdateVelocity();
-        updateAnimations();
-        
+            UpdateVelocity(); 
+            updateAnimations();
         }
 
         private void OnEnable()
