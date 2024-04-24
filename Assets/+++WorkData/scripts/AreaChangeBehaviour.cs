@@ -16,10 +16,10 @@ public class AreaChangeBehaviour : MonoBehaviour
 
     IEnumerator InitiateTeleport(Collider2D other)
     {
-        animDoor.Play("Panel_fade_in");
-        yield return new WaitForSeconds(3);
+        animDoor.SetBool("fade",true);
+        yield return new WaitForSeconds(0.3f);
         other.transform.position = portPosition.position;
         yield return new WaitForSeconds(.5f);
-        animDoor.Play("Panel_fade_out");
+        animDoor.SetBool("fade",false);
     }
 }
