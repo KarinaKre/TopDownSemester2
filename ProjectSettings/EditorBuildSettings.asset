@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TopDown 1.unity
     guid: 3442d1e904854d349aec44979d4f1ad8
   - enabled: 1
-    path: Assets/Scenes/TopDown.unity
-    guid: 098d2b27d616b944f9e1a80d88abbf53
+    path: Assets/Scenes/TopDown 4.unity
+    guid: 18e9219ae6c31884fb47fe10d372fca0
+  - enabled: 1
+    path: Assets/Scenes/TopDown 5.unity
+    guid: 87f24d9bebd31004aaf54b7e02e68f5a
   m_configObjects: {}

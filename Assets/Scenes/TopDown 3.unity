@@ -3291,6 +3291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveInput: {x: 0, y: 0}
+  selectedInteractable: {fileID: 0}
   speed: 5
   _anim: {fileID: 0}
 --- !u!95 &1820537716

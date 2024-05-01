@@ -6688,7 +6688,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1592439527, guid: 130dbcfdb644757428ce48aa52405b56, type: 3}
+  m_Sprite: {fileID: 300816317, guid: acd312a5fa076ad44baac026e4205b45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16566,7 +16566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db3255766ba69147bb96ef1125cb92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadScenes: TopDown
+  LoadScenes: TopDown 4
 --- !u!61 &1439679350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17321,6 +17321,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5288351145672896417, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288351145672896417, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288351145672896417, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3841719
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288351145672896417, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2240566
+      objectReference: {fileID: 0}
     - target: {fileID: 5355755959053362636, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -17361,6 +17377,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7485599463725279289, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485599463725279289, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 43.92
+      objectReference: {fileID: 0}
     - target: {fileID: 7572353127633245713, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -17369,6 +17393,18 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7766190874578179658, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -473.8438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766190874578179658, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17.9219
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766190874578179658, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8126225001409957413, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -17400,6 +17436,18 @@ PrefabInstance:
     - target: {fileID: 8196616546697854898, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405044114100998710, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -431.5977
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405044114100998710, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405044114100998710, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8810099341096493347, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_fontAsset
@@ -34351,6 +34399,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 503189318}
+  - {fileID: 1864966500}
   - {fileID: 95026035}
   - {fileID: 646227488}
   - {fileID: 71571190}
@@ -34369,4 +34418,3 @@ SceneRoots:
   - {fileID: 201520092}
   - {fileID: 1439679351}
   - {fileID: 1536117968}
-  - {fileID: 1864966500}
