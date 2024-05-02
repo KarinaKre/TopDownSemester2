@@ -1,8 +1,8 @@
 ===Yuffie===
 = Introduction
 Hey 
-*[SRY] ->Sorry
-*[well]
++[SRY] ->Sorry
++[well]
 Player: ..
 
 ->END

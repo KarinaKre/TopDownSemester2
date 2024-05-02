@@ -43,6 +43,8 @@ public class DialogueController : MonoBehaviour
         inkStory.onError += OnInkError;
         // Connect an ink function to a C# function.
         inkStory.BindExternalFunction<string>("Event", Event);
+        inkStory.BindExternalFunction<string>("Get_State",Get_State,true);
+        inkStory.BindExternalFunction<string,int>("Add_State",Add_State);
     }
 
     private void OnEnable()
@@ -211,6 +213,15 @@ public class DialogueController : MonoBehaviour
         InkEvent?.Invoke(eventName);
     }
 
+    private void Get_State(string id)
+    {
+        
+    }
+
+    private void Add_State(string id, int amount)
+    {
+        
+    }
     #endregion
 }
 

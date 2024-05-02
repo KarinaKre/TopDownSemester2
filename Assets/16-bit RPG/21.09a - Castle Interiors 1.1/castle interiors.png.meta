@@ -11594,7 +11594,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11602,6 +11602,27 @@ TextureImporter:
       bones: []
       spriteID: e87109ba6ea376c4b9abd4209421b35f
       internalID: -2133332922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castle interiors_545
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 65
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3e2e126bd3dd9499c7803a7967edd1
+      internalID: 1908525261
       vertices: []
       indices: 
       edges: []
@@ -12113,6 +12134,7 @@ TextureImporter:
       castle interiors_542: -418006050
       castle interiors_543: 691368000
       castle interiors_544: -2133332922
+      castle interiors_545: 1908525261
       castle interiors_55: -1977032468
       castle interiors_56: 1668782712
       castle interiors_57: 839926777
