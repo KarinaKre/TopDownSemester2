@@ -13408,7 +13408,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32
+  m_SortingOrder: 13
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
   m_Color: {r: 0, g: 0.47942042, b: 1, a: 1}
   m_FlipX: 0
@@ -17665,7 +17665,7 @@ GameObject:
   - component: {fileID: 1359473621}
   - component: {fileID: 1359473619}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17680,8 +17680,8 @@ Transform:
   m_GameObject: {fileID: 1359473617}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.9664383, w: 0.25689885}
-  m_LocalPosition: {x: 3.18, y: -1.53, z: 0}
-  m_LocalScale: {x: 1.0994918, y: 1.0994918, z: 1.0994918}
+  m_LocalPosition: {x: 11.43, y: -0.44, z: 0}
+  m_LocalScale: {x: 0.7414973, y: 0.7375391, z: 1.0994918}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 258392835}
@@ -17746,9 +17746,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.15294118, g: 0.28235295, b: 0.36862746, a: 1}
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 1571208222, guid: 734772bf07a275f4b8c8c0e84e132818, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18740,6 +18740,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1537144400977778423, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537144400977778423, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585058656751737685, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1970105947187398337, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -19004,6 +19016,18 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 6656806555563455417, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921577691401708618, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921577691401708618, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7485599463725279289, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -19071,6 +19095,14 @@ PrefabInstance:
     - target: {fileID: 8196616546697854898, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206001136889017470, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -597
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206001136889017470, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 8405044114100998710, guid: c838db473b9b7ea47a415dbd7563f089, type: 3}
       propertyPath: m_SizeDelta.x
@@ -19300,7 +19332,7 @@ Transform:
   m_GameObject: {fileID: 1531977334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 0.03, z: 0}
+  m_LocalPosition: {x: -1.54, y: -0.79, z: 0}
   m_LocalScale: {x: 4.6978173, y: 3.5784717, z: 3.5784714}
   m_ConstrainProportionsScale: 0
   m_Children: []
