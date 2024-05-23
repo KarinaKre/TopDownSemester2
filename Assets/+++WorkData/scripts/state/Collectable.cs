@@ -16,7 +16,7 @@ public class Collectable : MonoBehaviour
    public void Collect()
    {
       onCollected.Invoke();
-      FindObjectOfType<GameStateNEW>().Add(state);
+      FindObjectOfType<GameState>().Add(state);
       Destroy(gameObject);
    }
 }
