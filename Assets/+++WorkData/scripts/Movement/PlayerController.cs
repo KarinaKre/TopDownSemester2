@@ -110,7 +110,7 @@ namespace ___WorkData.Movement
 
         private void OnTriggerExit2D(Collider2D other)
         {
-        TryDelectedInteractable(other);
+        TryDeselectedInteractable(other);
         }
 
         #endregion
@@ -143,7 +143,7 @@ namespace ___WorkData.Movement
             selectedInteractable.Select();
         }
         
-        private void TryDelectedInteractable(Collider2D other)
+        private void TryDeselectedInteractable(Collider2D other)
         {
             Interactable interactable = other.GetComponent<Interactable>();
 

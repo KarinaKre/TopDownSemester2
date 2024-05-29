@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TopDown 1.unity
+    path: Assets/+++WorkData/Scenes/TopDown 1.unity
     guid: 3442d1e904854d349aec44979d4f1ad8
   - enabled: 1
-    path: Assets/Scenes/TopDown 4.unity
+    path: Assets/+++WorkData/Scenes/TopDown 4.unity
     guid: 18e9219ae6c31884fb47fe10d372fca0
   - enabled: 1
-    path: Assets/Scenes/TopDown 6.unity
+    path: Assets/+++WorkData/Scenes/TopDown 6.unity
     guid: 02be8ed01795c864090d47ae2f7653cb
   m_configObjects: {}
