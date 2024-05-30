@@ -660,11 +660,11 @@
                 },
                 {
                     "name": "",
-                    "id": "27cd1671-4527-4362-8f5e-1f5a50c6f48d",
+                    "id": "795856e9-0836-403c-bffe-8f3a837c4a36",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -786,6 +786,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "465c12b6-771c-42ea-9475-beb1cddb1584",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "RightClick",
                     "isComposite": false,
                     "isPartOfComposite": false
