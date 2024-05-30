@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameState : MonoBehaviour
 {
     public static event Action StateChanged;
-
+    public static event Action<string,int> StateAdded;
     #region Inspector
 
     [SerializeField] private List<State> states;
@@ -58,6 +58,7 @@ public class GameState : MonoBehaviour
         if (invokeEvent)
         {
             StateChanged?.Invoke();
+            StateAdded?.Invoke(id,amount);
         }
 
         StartCoroutine(CheckItems());
@@ -97,6 +98,7 @@ public class GameState : MonoBehaviour
             Add(state, false);
         }
         StateChanged?.Invoke();
+     
     }
     
     //#todo Check Conditions 

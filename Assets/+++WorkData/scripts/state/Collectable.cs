@@ -8,7 +8,7 @@ public class Collectable : MonoBehaviour
    #region  Inspector
 
    [SerializeField] private State state;
-
+   //[SerializeField] private StateInfo stateInfo;
    [SerializeField]   private UnityEvent onCollected;
    
    #endregion
