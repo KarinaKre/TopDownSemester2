@@ -7,7 +7,7 @@ using UnityEngine;
 public class State
 {
     public string id;
-    public int amount;
+    public string amount;
 
 
         

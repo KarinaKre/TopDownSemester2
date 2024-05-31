@@ -19,6 +19,6 @@ public class StateInfo
         this.amount = amount;
         this.sprite = sprite;
         this.description = description;
-        this.name = name;
+        //this.name = name;
     }
 }

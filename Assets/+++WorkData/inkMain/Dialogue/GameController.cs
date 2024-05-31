@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
 
     public void EnterPlayMode()
     {
-      //  Time.timeScale = 1;
+        Time.timeScale = 1;
         // In the editor: Unlock with ESC.
         //Cursor.lockState = CursorLockMode.Locked;
         player.EnableInput();
@@ -48,9 +48,22 @@ public class GameController : MonoBehaviour
 
     private void EnterDialogueMode()
     {
-       // Time.timeScale = 1;
+        Time.timeScale = 1;
         //Cursor.lockState = CursorLockMode.Locked;
         player.DisableInput(); 
+    }
+    
+    private void EnterStatePopUpMode()
+    {
+        Time.timeScale = 1;
+        //Cursor.lockState = CursorLockMode.Locked;
+        player.DisableInput(); 
+    }
+
+
+    public void EndStatePopUpMode()
+    {
+        EnterPlayMode();
     }
 
     #endregion
@@ -102,6 +115,11 @@ public class GameController : MonoBehaviour
     {
         yield return null;
         newSelectable.Select();
+    }
+
+    public void StartStatePopUp()
+    {
+        EnterStatePopUpMode();
     }
 }
 
