@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
    [SerializeField] private GameObject inventoryContainer;
    private GameState gameState;
    private StateManager stateManager;
+   
    private void Awake()
    {
       gameState = FindObjectOfType<GameState>();
@@ -24,20 +25,27 @@ public class InventoryManager : MonoBehaviour
    public void OpenInventory()
    {
       List<State> currentStateList = gameState.GetStateList();
-
+      int a = 0; // reference to the currentStateList Index
       for (int i = 0; i < inventorySlots.Length; i++)
       {
-         if (i > currentStateList.Count -1)
+         if (a > currentStateList.Count -1)
          {
             
+           
          }
          else
          {
-            StateInfo newStateInfo = stateManager.GetStateById(currentStateList[i].id);
-            inventorySlots[i].SetInventorySlot(newStateInfo.sprite,currentStateList[i].amount);
+            StateInfo newStateInfo = stateManager.GetStateById(currentStateList[a].id);
+            inventorySlots[i].SetInventorySlot(newStateInfo.sprite, currentStateList[a].amount);
+            a++;
+            gameState.GetStateList();
          }
       }
    }
+
+
+
+   
    
    public void CloseInventory()
    {

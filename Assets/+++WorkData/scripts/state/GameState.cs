@@ -45,7 +45,7 @@ public class GameState : MonoBehaviour
 
         if (state == null)
         {
-            State newState = new State(id, amount);
+            State newState = new State(id,amount);
             states.Add(newState);
         }
         else

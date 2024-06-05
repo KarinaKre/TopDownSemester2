@@ -7,11 +7,11 @@ using UnityEngine;
 public class State
 {
     public string id;
-    public string amount;
+    public int amount;
 
 
         
-    public State(string id, int amount)
+    public State(string id,int amount)
     {
         this.id = id;
         this.amount = amount;

@@ -11,8 +11,11 @@ namespace ___WorkData.Movement
         private Player_InputActions _inputActions;
         private InputAction _moveAction;
         private InputAction _interactAction;
+        private InputAction _openInventory;
         public Vector2 moveInput;
 
+        public GameObject InventoryContainer;
+        
         public Interactable selectedInteractable;
         public float speed  = 5f;
         private Rigidbody2D _rb;
@@ -26,6 +29,7 @@ namespace ___WorkData.Movement
 
             _moveAction = _inputActions.Player.Move;
             _interactAction = _inputActions.Player.Interact;
+            _openInventory = _inputActions.Player.Inventory;
             
             _rb = GetComponent<Rigidbody2D>();
             _sr = GetComponent<SpriteRenderer>();
@@ -43,6 +47,7 @@ namespace ___WorkData.Movement
            _moveAction.performed += Move;
            _moveAction.canceled += Move;
            _interactAction.performed += Interact;
+           _openInventory.performed += OpenInventory;
         }
         private void OnDisable()
         {
@@ -50,6 +55,7 @@ namespace ___WorkData.Movement
             _moveAction.performed -= Move;
             _moveAction.canceled -= Move;
             _interactAction.performed -= Interact;
+            _openInventory.performed -= OpenInventory;
         }
         public void EnableInput()
         {
@@ -159,5 +165,10 @@ namespace ___WorkData.Movement
             }
         }
         #endregion
+
+        public void OpenInventory(InputAction.CallbackContext ctx)
+        {
+            InventoryContainer.SetActive(!InventoryContainer.activeInHierarchy);
+        }
     }
 }
