@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -10,45 +12,57 @@ public class InventoryManager : MonoBehaviour
    [SerializeField] private GameObject inventoryContainer;
    private GameState gameState;
    private StateManager stateManager;
+
+   [Header("Item Description Panel")]
+   [SerializeField] private Image itemImage;
+   [SerializeField] private GameObject itemDescriptionContainer;
+   [SerializeField] private TextMeshProUGUI itemHeaderText;
+   [SerializeField] private TextMeshProUGUI itemDescriptionText;
+   
+   
+   
    
    private void Awake()
    {
       gameState = FindObjectOfType<GameState>();
       stateManager = FindObjectOfType<StateManager>();
    }
-
-   void RefreshInventory()
-   {
-      
-   }
-
-   public void OpenInventory()
+   
+   public void RefreshInventory()
    {
       List<State> currentStateList = gameState.GetStateList();
-      int a = 0; // reference to the currentStateList Index
+      
+     
       for (int i = 0; i < inventorySlots.Length; i++)
       {
-         if (a > currentStateList.Count -1)
+
+         if (currentStateList.Count == 0)
          {
-            
-           
+            itemDescriptionContainer.SetActive(false);
+            inventorySlots[i].TurnOffBorder();
+         }
+         
+         
+         if (i < currentStateList.Count)
+         {
+            StateInfo newStateInfo = stateManager.GetStateById(currentStateList[i].id);
+            newStateInfo.amount = currentStateList[i].amount;
+            inventorySlots[i].SetStateInfo(newStateInfo);
+ 
          }
          else
          {
-            StateInfo newStateInfo = stateManager.GetStateById(currentStateList[a].id);
-            inventorySlots[i].SetInventorySlot(newStateInfo.sprite, currentStateList[a].amount);
-            a++;
-            gameState.GetStateList();
+           inventorySlots[i].TurnOnOffVisuals(false);
          }
       }
    }
 
 
-
-   
-   
-   public void CloseInventory()
+   public void ShowItemDescription(StateInfo stateInfo)
    {
-      
+      itemImage.sprite = stateInfo.sprite;
+      itemHeaderText.SetText(stateInfo.name);
+      itemDescriptionText.SetText(stateInfo.description);
+      itemDescriptionContainer.SetActive(true);
    }
 }
