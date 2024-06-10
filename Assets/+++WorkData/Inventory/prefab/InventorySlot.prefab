@@ -273,7 +273,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &3869703728353829434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   slotImage: {fileID: 304238103745499759}
   text_slotAmount: {fileID: 3792566758072458917}
   toggleState: {fileID: 7302600978029014834}
-  inventorySlotBorder: {fileID: 0}
+  inventorySlotBorder: {fileID: 6090693764600280031}
 --- !u!1 &6090693764600280031
 GameObject:
   m_ObjectHideFlags: 0

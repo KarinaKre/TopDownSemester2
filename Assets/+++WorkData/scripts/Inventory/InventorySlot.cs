@@ -43,16 +43,14 @@ public class InventorySlot : MonoBehaviour
         text_slotAmount.gameObject.SetActive(value);
         toggleState.interactable = value;
         inventorySlotBorder.gameObject.SetActive(false);
-        
-
     }
 
     public void TurnOffBorder()
     {
-        StartCoroutine(IntiateTurnOffBorder());
+        StartCoroutine(InitiateTurnOffBorder());
     }
 
-    IEnumerator IntiateTurnOffBorder()
+    IEnumerator InitiateTurnOffBorder()
     {
         yield return null;
         inventorySlotBorder.SetActive(false);
@@ -62,7 +60,7 @@ public class InventorySlot : MonoBehaviour
     {
         if (toggleState.isOn)
         {
-            inventoryManager.ShowItemDescription((stateInfo));
+            inventoryManager.ShowItemDescription(stateInfo);
         }
     }
 
