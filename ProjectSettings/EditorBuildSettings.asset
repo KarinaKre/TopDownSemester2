@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/+++WorkData/Scenes/TopDown 1.unity
+    path: Assets/+++WorkData/Scenes/PreMenu.unity
+    guid: 1664eb9b18017e34cb4a5fcb00b316a4
+  - enabled: 1
+    path: Assets/+++WorkData/Scenes/MainMenu.unity
+    guid: 54d8e8cd07c60ca40b5c4e5f83954560
+  - enabled: 1
+    path: Assets/+++WorkData/Scenes/Castle.unity
     guid: 3442d1e904854d349aec44979d4f1ad8
   - enabled: 1
-    path: Assets/+++WorkData/Scenes/TopDown 4.unity
+    path: Assets/+++WorkData/Scenes/Forest.unity
     guid: 18e9219ae6c31884fb47fe10d372fca0
   - enabled: 1
-    path: Assets/+++WorkData/Scenes/TopDown 6.unity
+    path: Assets/+++WorkData/Scenes/Dungeon.unity
     guid: 02be8ed01795c864090d47ae2f7653cb
   m_configObjects: {}

@@ -7,8 +7,11 @@ public class GameController : MonoBehaviour
 {
     private PlayerController player;
     private DialogueController dialogueController;
- 
 
+    public enum GameMode {PreMenu,MainMenu,NewGame,LoadGame,GameMode}
+
+    public GameMode gameMode;
+    
     public Button lastSelectable;
     #region Unity Event Functions
 
