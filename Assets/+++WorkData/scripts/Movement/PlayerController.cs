@@ -11,7 +11,7 @@ namespace ___WorkData.Movement
         private Player_InputActions _inputActions;
         private InputAction _moveAction;
         private InputAction _interactAction;
-        
+        private InputAction _farmAction;
         public Vector2 moveInput;
 
      
@@ -29,7 +29,7 @@ namespace ___WorkData.Movement
 
             _moveAction = _inputActions.Player.Move;
             _interactAction = _inputActions.Player.Interact;
-          
+            _farmAction = _inputActions.Player.Attack;
             
             _rb = GetComponent<Rigidbody2D>();
             _sr = GetComponent<SpriteRenderer>();
@@ -47,7 +47,7 @@ namespace ___WorkData.Movement
            _moveAction.performed += Move;
            _moveAction.canceled += Move;
            _interactAction.performed += Interact;
-          
+           _farmAction.performed += Farm;
         }
         private void OnDisable()
         {
@@ -55,8 +55,24 @@ namespace ___WorkData.Movement
             _moveAction.performed -= Move;
             _moveAction.canceled -= Move;
             _interactAction.performed -= Interact;
-            
+            _farmAction.performed -= Farm;
         }
+
+        private void Farm(InputAction.CallbackContext ctx)
+        {
+            if (ctx.performed)
+            {
+                _anim.SetFloat("dirY", moveInput.y);
+                _anim.SetFloat("dirX", moveInput.x);
+                _anim.SetInteger("actionId",1);
+                _anim.SetTrigger("actionTrigger");
+            }
+            else
+            {
+                _anim.SetInteger("actionId",0);
+            }
+        }
+
         public void EnableInput()
         {
             _inputActions.Enable();
@@ -168,4 +184,6 @@ namespace ___WorkData.Movement
 
        
     }
+    
+    
 }
