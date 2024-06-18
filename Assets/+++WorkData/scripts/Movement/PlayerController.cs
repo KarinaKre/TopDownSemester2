@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 namespace ___WorkData.Movement
 {
@@ -14,7 +15,8 @@ namespace ___WorkData.Movement
         private InputAction _farmAction;
         public Vector2 moveInput;
 
-     
+        public Sprite[] fieldSprites;
+        public SpriteRenderer tmr;
         
         public Interactable selectedInteractable;
         public float speed  = 5f;
@@ -58,7 +60,7 @@ namespace ___WorkData.Movement
             _farmAction.performed -= Farm;
         }
 
-        private void Farm(InputAction.CallbackContext ctx)
+        public void Farm(InputAction.CallbackContext ctx)
         {
             if (ctx.performed)
             {
@@ -66,6 +68,10 @@ namespace ___WorkData.Movement
                 _anim.SetFloat("dirX", moveInput.x);
                 _anim.SetInteger("actionId",1);
                 _anim.SetTrigger("actionTrigger");
+                if (CompareTag("field"))
+                {
+                    tmr.sprite = fieldSprites[1];
+                }
             }
             else
             {
