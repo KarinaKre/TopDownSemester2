@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -9,14 +11,17 @@ namespace ___WorkData.Movement
     {
         #region Variables
         
-        private Player_InputActions _inputActions;
+        public Player_InputActions _inputActions;
         private InputAction _moveAction;
         private InputAction _interactAction;
-        private InputAction _farmAction;
+      //  private InputAction _farmAction;
         public Vector2 moveInput;
 
         public Sprite[] fieldSprites;
         public SpriteRenderer tmr;
+
+        public static event Action SubscribeAction;
+        public static event Action UnsubscribeAction; 
         
         public Interactable selectedInteractable;
         public float speed  = 5f;
@@ -31,7 +36,7 @@ namespace ___WorkData.Movement
 
             _moveAction = _inputActions.Player.Move;
             _interactAction = _inputActions.Player.Interact;
-            _farmAction = _inputActions.Player.Attack;
+           // _farmAction = _inputActions.Player.Attack;
             
             _rb = GetComponent<Rigidbody2D>();
             _sr = GetComponent<SpriteRenderer>();
@@ -44,12 +49,14 @@ namespace ___WorkData.Movement
         }
 
         private void OnEnable()
-        { 
-            
+        {
            _moveAction.performed += Move;
            _moveAction.canceled += Move;
+           
            _interactAction.performed += Interact;
-           _farmAction.performed += Farm;
+
+           StartCoroutine(DelaySubscribe());
+           //_farmAction.performed += Farm;
         }
         private void OnDisable()
         {
@@ -57,9 +64,11 @@ namespace ___WorkData.Movement
             _moveAction.performed -= Move;
             _moveAction.canceled -= Move;
             _interactAction.performed -= Interact;
-            _farmAction.performed -= Farm;
+            //_farmAction.performed -= Farm;
+            
+            UnsubscribeAction?.Invoke();
         }
-
+    /*
         public void Farm(InputAction.CallbackContext ctx)
         {
             if (ctx.performed)
@@ -78,7 +87,7 @@ namespace ___WorkData.Movement
                 _anim.SetInteger("actionId",0);
             }
         }
-
+    */
         public void EnableInput()
         {
             _inputActions.Enable();
@@ -88,7 +97,13 @@ namespace ___WorkData.Movement
         {
             _inputActions.Disable();
         }
-        
+
+        IEnumerator DelaySubscribe()
+        {
+            yield return null;
+            SubscribeAction?.Invoke();
+            
+        }
         private void FixedUpdate()
         {
             //_rb.velocity = new Vector2(moveInput.x * speed,moveInput.y);
@@ -191,5 +206,5 @@ namespace ___WorkData.Movement
        
     }
     
-    
+  
 }
