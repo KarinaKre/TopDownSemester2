@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 324125613526600176, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1703482571405617472, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -578,6 +582,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8304181353039795284, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8587616685282035055, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -685,8 +693,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3130981442573280783, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823049697}
   m_SourcePrefab: {fileID: 100100000, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
+--- !u!1 &823049696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3130981442573280783, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
+  m_PrefabInstance: {fileID: 823049695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &823049697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823049696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e05f874ffcceda46aa7cf784e4d51ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828859639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7016843426780968608, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
@@ -914,7 +942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press any Key
+  m_text: Click
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

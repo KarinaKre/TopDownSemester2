@@ -72,8 +72,8 @@ public class PlayerActions : MonoBehaviour
 
                 dirX = playerController._anim.GetFloat("dirX");
                 dirY = playerController._anim.GetFloat("dirY");
-                weaponAnim.SetFloat("weaponId",0);
-                weaponAnim.SetFloat("attackId",actionId);
+                weaponAnim.SetInteger("weaponId",0);
+                weaponAnim.SetInteger("attackId",actionId);
                 weaponAnim.SetTrigger("actionTrigger");
                 weaponAnim.SetFloat("dirX",dirX);
                 weaponAnim.SetFloat("dirY",dirY);
