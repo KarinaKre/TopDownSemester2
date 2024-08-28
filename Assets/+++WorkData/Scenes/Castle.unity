@@ -39850,11 +39850,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370038848}
   m_CullTransparentMesh: 1
---- !u!1 &1373828154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1875132179675507306, guid: 42ab0ba84e7d2ca489906f72ddff937f, type: 3}
-  m_PrefabInstance: {fileID: 1838282600979220875}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1376242138 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2584455430274461421, guid: a88b8b27e6d300e42b97d05ee55990c7, type: 3}
@@ -45534,7 +45529,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1373828154}
+        - m_Target: {fileID: 2001864853}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
           m_Mode: 6
